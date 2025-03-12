@@ -29,6 +29,7 @@
         android:text="Flamengo"
         android:textSize="18sp"
         android:layout_marginBottom="16dp"/>
+
     <Button
         android:id="@+id/buttonVasco"
         android:layout_width="wrap_content"
@@ -36,6 +37,7 @@
         android:text="Vasco"
         android:textSize="18sp"
         android:layout_marginBottom="16dp"/>
+
     <Button
         android:id="@+id/buttonBotafogo"
         android:layout_width="wrap_content"
@@ -43,6 +45,7 @@
         android:text="Botafogo"
         android:textSize="18sp"
         android:layout_marginBottom="16dp"/>
+
     <Button
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
