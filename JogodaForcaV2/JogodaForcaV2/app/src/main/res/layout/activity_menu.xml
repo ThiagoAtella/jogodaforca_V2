@@ -11,7 +11,6 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <!-- Botão para iniciar o jogo -->
         <Button
             android:id="@+id/buttonStartGame"
             android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
             android:textSize="18sp"
             android:layout_marginBottom="16dp"/>
 
-        <!-- Botão para sair do aplicativo -->
         <Button
             android:id="@+id/buttonExit"
             android:layout_width="wrap_content"
