@@ -15,7 +15,7 @@ public class MenuActivity extends AppCompatActivity {
         binding = ActivityMenuBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        // Configura o botão para iniciar o jogo
+        // Botão para iniciar o jogo
         binding.buttonStartGame.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,7 +24,7 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-        // Configura o botão para sair do aplicativo
+        // Botão para sair do aplicativo
         binding.buttonExit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
