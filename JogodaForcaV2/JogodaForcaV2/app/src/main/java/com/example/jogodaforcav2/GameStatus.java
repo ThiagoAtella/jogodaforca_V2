@@ -1,6 +1,6 @@
 package com.example.jogodaforcav2;
 
-public class GameStatus{
+public class GameStatus {
     private final String message;
     private final Boolean acerto;
 
