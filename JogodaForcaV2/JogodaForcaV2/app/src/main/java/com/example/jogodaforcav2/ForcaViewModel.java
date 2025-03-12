@@ -13,6 +13,8 @@ import java.util.Set;
 public class ForcaViewModel extends ViewModel {
     private static final List<String> PALAVRAS_FLUMINENSE = Arrays.asList("FLUMINENSE", "CANO", "TRICOLOR", "CAMPEÃO", "ETERNO");
     private static final List<String> PALAVRAS_FLAMENGO = Arrays.asList("FLAMENGO", "GABIGOL", "MENGO", "HEXACAMPEÃO", "MARACANÃ");
+    private static final List<String> PALAVRAS_VASCO = Arrays.asList("VASCO", "ROMÁRIO", "GIGANTE", "CRUZMALTINO", "SAOJANUARIO");
+    private static final List<String> PALAVRAS_BOTAFOGO = Arrays.asList("BOTAFOGO", "LOUCOABREU", "ESTRELA", "FIRE", "GLORIOSO");
 
     private final List<String> palavras;
     private String palavra;
@@ -25,7 +27,19 @@ public class ForcaViewModel extends ViewModel {
     private final MutableLiveData<GameStatus> _status = new MutableLiveData<>();
 
     public ForcaViewModel(String time) {
-        this.palavras = "FLAMENGO".equals(time) ? PALAVRAS_FLAMENGO : PALAVRAS_FLUMINENSE;
+        switch (time) {
+            case "FLAMENGO":
+                this.palavras = PALAVRAS_FLAMENGO;
+                break;
+            case "VASCO":
+                this.palavras = PALAVRAS_VASCO;
+                break;
+            case "BOTAFOGO":
+                this.palavras = PALAVRAS_BOTAFOGO;
+                break;
+            default:
+                this.palavras = PALAVRAS_FLUMINENSE; // Fluminense como padrão
+        }
         iniciarNovoJogo();
     }
 
