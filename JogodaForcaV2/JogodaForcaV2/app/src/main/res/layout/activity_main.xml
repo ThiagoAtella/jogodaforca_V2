@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
         android:layout_centerInParent="true"
@@ -30,26 +30,14 @@
             android:layout_marginBottom="16dp"
             android:textColor="@android:color/holo_blue_dark" />
 
-        <EditText
-            android:id="@+id/inputLetter"
-            android:layout_width="wrap_content"
+        <!-- Layout para os botões do alfabeto -->
+        <GridLayout
+            android:id="@+id/keyboardLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Digite uma letra"
-            android:maxLength="1"
-            android:inputType="textCapCharacters"
+            android:columnCount="7"
             android:layout_marginBottom="16dp"
-            android:textSize="24sp"
-            android:padding="10dp"
-            android:textColor="@android:color/holo_blue_dark"
-            android:gravity="center"/>
-
-        <Button
-            android:id="@+id/buttonGuess"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Adivinhar"
-            android:textSize="18sp"
-            android:layout_marginBottom="16dp" />
+            android:padding="8dp"/>
 
         <Button
             android:id="@+id/buttonRestart"
@@ -59,6 +47,15 @@
             android:textSize="18sp"
             android:layout_marginBottom="16dp" />
 
+        <Button
+            android:id="@+id/buttonBackToTeamSelection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:textColor="@android:color/white"
+            android:layout_margin="16dp" />
+
+
         <TextView
             android:id="@+id/textViewStatus"
             android:layout_width="wrap_content"
@@ -67,11 +64,5 @@
             android:textColor="@android:color/holo_blue_dark"
             android:layout_marginTop="16dp" />
 
-        <ImageView
-            android:id="@+id/imageViewResult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:visibility="gone" />
     </LinearLayout>
 </RelativeLayout>
