@@ -11,11 +11,15 @@ import java.util.Random;
 import java.util.Set;
 
 public class ForcaViewModel extends ViewModel {
-    private static final List<String> PALAVRAS_FLUMINENSE = Arrays.asList("FLUMINENSE", "CANO", "TRICOLOR", "CAMPEÃO", "ETERNO");
-    private static final List<String> PALAVRAS_FLAMENGO = Arrays.asList("FLAMENGO", "GABIGOL", "MENGO", "HEXACAMPEÃO", "MARACANÃ");
-    private static final List<String> PALAVRAS_VASCO = Arrays.asList("VASCO", "ROMÁRIO", "GIGANTE", "CRUZMALTINO", "SAOJANUARIO");
-    private static final List<String> PALAVRAS_BOTAFOGO = Arrays.asList("BOTAFOGO", "LOUCOABREU", "ESTRELA", "FIRE", "GLORIOSO");
-
+    private static final List<String> PALAVRAS_FLUMINENSE = Arrays.asList("FLUMINENSE", "CANO", "TRICOLOR", "CAMPEÃO", "ETERNO",
+            "LARANJEIRAS", "CARTOLINHA", "COPARIO");
+    private static final List<String> PALAVRAS_FLAMENGO = Arrays.asList("FLAMENGO", "GABIGOL", "MENGO", "HEXACAMPEÃO", "MARACANÃ",
+            "URUBU", "RUBRO-NEGRO", "ZICO", "JORGEJESUS");
+    private static final List<String> PALAVRAS_VASCO = Arrays.asList("VASCO", "ROMÁRIO", "GIGANTE", "CRUZMALTINO", "SAOJANUARIO",
+            "ROBERTODINAMITE", "VASCÃO", "COLINA", "ALMIRANTE");
+    private static final List<String> PALAVRAS_BOTAFOGO = Arrays.asList("BOTAFOGO", "LOCOABREU", "ESTRELA", "FOGÃO", "GLORIOSO",
+            "MANEQUINHO", "ENGENHÃO", "NILTONSANTOS", "ZAGALLO");
+    
     private final List<String> palavras;
     private String palavra;
     private char[] palavraOcultaArray;
