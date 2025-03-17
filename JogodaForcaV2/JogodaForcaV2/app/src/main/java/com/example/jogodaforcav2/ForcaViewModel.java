@@ -69,10 +69,27 @@ public class ForcaViewModel extends ViewModel {
         atualizarUI();
     }
 
-    public void processarPalpite(char letra) {
-        if (!letrasTentadas.add(letra)) {
-            return;
+    private void processarPalpite(char letra) {
+        viewModel.processarPalpite(letra);
+
+        // Obtém o botão correspondente à letra
+        Button btn = keyboardButtons.get(letra);
+        if (btn != null) {
+            btn.setEnabled(false);
+            btn.setBackgroundColor(Color.GRAY);
         }
+
+        // Observa se a letra foi acertada ou errada e toca o som correspondente
+        viewModel.getStatus().observe(this, status -> {
+            if (status.getAcerto() != null) {
+                if (status.getAcerto()) {
+                    somAcerto.start(); // Som de acerto 🎵
+                } else {
+                    somErro.start(); // Som de erro 🔊
+                }
+            }
+        });
+    }
 
         boolean acertou = false;
         for (int i = 0; i < palavra.length(); i++) {
