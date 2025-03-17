@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.Button;
 import android.widget.GridLayout;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewModelProvider;
@@ -19,12 +21,19 @@ public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
     private ForcaViewModel viewModel;
     private final Map<Character, Button> keyboardButtons = new HashMap<>();
+    private MediaPlayer somAcerto;
+    private MediaPlayer somErro;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        // Inicializa os sons de acerto e erro
+        somAcerto = MediaPlayer.create(this, R.raw.acerto)
+        somErro = MediaPlayer.create(this, R.raw.erro);
 
         String timeEscolhido = getIntent().getStringExtra("TIME_ESCOLHIDO");
         if (timeEscolhido == null) {
@@ -54,10 +63,8 @@ public class MainActivity extends AppCompatActivity {
             finish(); // Fecha a MainActivity para evitar voltar para o jogo já iniciado
         });
     }
-
     private void configurarObservadores() {
         viewModel.getPalavraOculta().observe(this, palavra -> binding.textViewWord.setText(palavra));
-
         viewModel.getTentativas().observe(this, tentativas ->
                 binding.textViewAttempts.setText("Tentativas restantes: " + tentativas)
         );
@@ -66,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
             binding.textViewStatus.setText(status.getMessage());
             if (status.getAcerto() != null) {
                 binding.textViewWord.setTextColor(status.getAcerto() ? Color.GREEN : Color.RED);
+
             } else {
                 binding.textViewWord.setTextColor(Color.BLACK);
             }
@@ -96,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
             btn.setLayoutParams(params);
 
             btn.setOnClickListener(v -> processarPalpite(letraFinal));
-
             keyboardLayout.addView(btn);
             keyboardButtons.put(letraFinal, btn);
         }
