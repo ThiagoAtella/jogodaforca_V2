@@ -14,19 +14,31 @@
         android:padding="16dp">
 
         <TextView
+            android:id="@+id/textViewPontos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pontos: 0"
+            android:textSize="18sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginBottom="16dp"/>
+
+
+        <TextView
             android:id="@+id/textViewWord"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:layout_marginBottom="16dp"
-            android:textColor="@android:color/holo_blue_dark" />
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textViewAttempts"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+            android:fontFamily="@font/roboto_bold"
             android:layout_marginBottom="16dp"
             android:textColor="@android:color/holo_blue_dark" />
 
@@ -43,6 +55,7 @@
             android:id="@+id/buttonRestart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
             android:text="Reiniciar"
             android:textSize="18sp"
             android:layout_marginBottom="16dp" />
@@ -51,6 +64,7 @@
             android:id="@+id/buttonBackToTeamSelection"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
             android:text="Voltar"
             android:textColor="@android:color/white"
             android:layout_margin="16dp" />
@@ -61,6 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="18sp"
+
             android:textColor="@android:color/holo_blue_dark"
             android:layout_marginTop="16dp" />
 
