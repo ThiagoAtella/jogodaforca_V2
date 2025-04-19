@@ -11,14 +11,14 @@ import java.util.Random;
 import java.util.Set;
 
 public class ForcaViewModel extends ViewModel {
-    private static final List<String> PALAVRAS_FLUMINENSE = Arrays.asList("CANO", "TRICOLOR", "CAMPEÃO", "ETERNO",
-            "LARANJEIRAS", "CARTOLINHA", "COPARIO");
-    private static final List<String> PALAVRAS_FLAMENGO = Arrays.asList("GABIGOL", "MENGO", "HEXACAMPEÃO", "MARACANÃ",
-            "URUBU", "RUBRONEGRO", "ZICO", "JORGEJESUS", "FELIPEARTHUR");
-    private static final List<String> PALAVRAS_VASCO = Arrays.asList("ROMÁRIO", "GIGANTE", "CRUZMALTINO", "SAOJANUÁRIO",
-            "ROBERTODINAMITE", "COLINA", "ALMIRANTE");
-    private static final List<String> PALAVRAS_BOTAFOGO = Arrays.asList("LOCOABREU", "ESTRELA", "FOGÃO", "GLORIOSO",
-            "MANEQUINHO", "ENGENHÃO", "NILTONSANTOS", "ZAGALLO");
+    private static final List<String> PALAVRAS_FLUMINENSE = Arrays.asList("CANO", "TRICOLOR", "CAMPEAO", "ETERNO",
+            "LARANJEIRAS", "CARTOLINHA", "COPA RIO");
+    private static final List<String> PALAVRAS_FLAMENGO = Arrays.asList("GABIGOL", "MENGO", "HEXACAMPEAO", "MARACANA",
+            "URUBU", "RUBRO NEGRO", "ZICO", "JORGE JESUS", "FELIPE ARTHUR");
+    private static final List<String> PALAVRAS_VASCO = Arrays.asList("ROMARIO", "GIGANTE", "CRUZMALTINO", "SAO JANUARIO",
+            "ROBERTO DINAMITE", "COLINA", "ALMIRANTE");
+    private static final List<String> PALAVRAS_BOTAFOGO = Arrays.asList("LOCO ABREU", "ESTRELA", "FOGAO", "GLORIOSO",
+            "MANEQUINHO", "ENGENHAO", "NILTON SANTOS", "ZAGALLO");
 
     private final List<String> palavras;
     private String palavra;
@@ -64,7 +64,14 @@ public class ForcaViewModel extends ViewModel {
     public void iniciarNovoJogo() {
         palavra = palavras.get(new Random().nextInt(palavras.size()));
         palavraOcultaArray = new char[palavra.length()];
-        Arrays.fill(palavraOcultaArray, '_' );
+        for (int i = 0; i < palavra.length(); i++) {
+            if (palavra.charAt(i) == ' ') {
+                palavraOcultaArray[i] = ' ';
+            } else {
+                palavraOcultaArray[i] = '_';
+            }
+        }
+
         tentativasRestantes = 6;
         letrasTentadas.clear();
         _status.setValue(new GameStatus("Jogo iniciado!", null));
@@ -93,9 +100,15 @@ public class ForcaViewModel extends ViewModel {
     }
 
     private void atualizarUI() {
-        _palavraOculta.setValue(new String(palavraOcultaArray));
+        StringBuilder sb = new StringBuilder();
+        for (char c : palavraOcultaArray) {
+            sb.append(c).append(' ');
+        }
+        _palavraOculta.setValue(sb.toString().trim());
         _tentativas.setValue(tentativasRestantes);
     }
+
+
 
     private void verificarFimDeJogo(boolean acertou) {
         if (tentativasRestantes <= 0) {
