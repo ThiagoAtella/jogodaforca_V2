@@ -1,0 +1,126 @@
+[
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/drawable_brasileiro2.jpg.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/drawable/brasileiro2.jpg"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/font_gothic_a1_black.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/font/gothic_a1_black.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/drawable_botafogo.png.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/drawable/botafogo.png"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/font_titillium_web_bold.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/font/titillium_web_bold.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/xml_backup_rules.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/drawable_vasco.png.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/drawable/vasco.png"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/layout_activity_menu.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/layout/activity_menu.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/drawable_fluminense.png.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/drawable/fluminense.png"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/font_changa.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/font/changa.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/layout_activity_team_selection.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/layout/activity_team_selection.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/drawable_brasileiro.png.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/drawable/brasileiro.png"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/drawable_flamengo.png.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/drawable/flamengo.png"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/drawable_brasileiro1.jpg.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/drawable/brasileiro1.jpg"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/font_roboto_bold.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/font/roboto_bold.xml"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.jogodaforcav2.app-debug-31:/font_gothic_a1_extrabold.xml.flat",
+        "source": "com.example.jogodaforcav2.app-main-33:/font/gothic_a1_extrabold.xml"
+    }
+]
